@@ -1,5 +1,5 @@
 /*========================================
-AINEX JPW PRO v4
+JPW REACHED SERVICES BOT v4
 script.js
 ========================================*/
 
@@ -41,7 +41,7 @@ headers:{
 
 body:JSON.stringify({
 
-amount:1500
+amount:2000
 
 })
 
@@ -71,7 +71,7 @@ alert("Unable To Create Payment Order");
 
 payBtn.disabled=false;
 
-payBtn.innerHTML="💳 Pay ₹15";
+payBtn.innerHTML="💳 Pay ₹20 Securely";
 
 }
 
@@ -91,7 +91,7 @@ amount:order.amount,
 
 currency:order.currency,
 
-name:"AINEX SERVICES",
+name:"JPW REACHED SERVICES BOT",
 
 description:"JPW Reach Service",
 
@@ -113,7 +113,7 @@ ondismiss:function(){
 
 payBtn.disabled=false;
 
-payBtn.innerHTML="💳 Pay ₹15";
+payBtn.innerHTML="💳 Pay ₹20 Securely";
 
 }
 
@@ -169,7 +169,7 @@ alert(result.message || "Payment Verification Failed");
 
 payBtn.disabled=false;
 
-payBtn.innerHTML="💳 Pay ₹15";
+payBtn.innerHTML="💳 Pay ₹20 Securely";
 
 }
 
@@ -181,7 +181,7 @@ alert("Server Error");
 
 payBtn.disabled=false;
 
-payBtn.innerHTML="💳 Pay ₹15";
+payBtn.innerHTML="💳 Pay ₹20 Securely";
 
 }
 
@@ -276,7 +276,7 @@ steps[2].classList.add("active");
 
 const msg=
 
-`*AINEX JPW*
+`*JPW REACHED SERVICES BOT*
 
 Payment ID : ${paymentid.value}
 
@@ -286,7 +286,7 @@ Password : ${password.value}`;
 
 window.open(
 
-"https://wa.me/919236414171?text="+encodeURIComponent(msg),
+"https://wa.me/918167443801?text="+encodeURIComponent(msg),
 
 "_blank"
 
