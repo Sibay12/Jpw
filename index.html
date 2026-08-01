@@ -2,451 +2,238 @@
 <html lang="en">
 
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AINEX SERVICES | JPW Reach</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPW REACHED SERVICES BOT | JPW Reach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
 
 <body>
 
-<div class="bg1"></div>
-<div class="bg2"></div>
-
-<div class="container">
-
-<!-- TOP BAR -->
-
-<div class="topBar">
-
-<div class="marquee">
-
-<span>
-
-🔥 Welcome To AINEX SERVICES • Complete ₹15 Payment • Payment Verification • Secure Service • Trusted Platform • Fast Delivery • Razorpay Secure Payment • JPW Reach •
-
-</span>
-
-</div>
-
-</div>
-
-<!-- HEADER -->
-
-<header>
-
-<div class="brand">
-
-<div class="logo">
-
-🏢
-
-</div>
-
-<div>
-
-<h1>AINEX SERVICES</h1>
-
-<p>Jio Partner Work</p>
-
-</div>
-
-</div>
-
-<div class="liveStatus">
-
-<span></span>
-
-Secure
-
-</div>
-
-</header>
-
-<!-- HERO -->
-
-<section class="hero">
-
-<div class="heroCard">
-
-<div class="rocket">
-
-🚀
-
-</div>
-
-<h2>
-
-Building ID Reach
-
-</h2>
-
-<p>
-
-Professional Digital Service
-
-</p>
-
-<div class="price">
-
-₹15
-
-<span>
-
-Per Work Order
-
-</span>
-
-</div>
-
-<button id="payBtn">
-
-💳 Pay ₹15 Securely
-
-</button>
-
-<div class="paymentType">
-
-UPI • Cards • Wallet • NetBanking
-
-</div>
-
-</div>
-
-</section>
-
-<!-- STEP -->
-
-<section class="steps">
-
-<div class="step active">
-
-<div class="circle">
-
-1
-
-</div>
-
-<p>
-
-Payment
-
-</p>
-
-</div>
-
-<div class="line"></div>
-
-<div class="step">
-
-<div class="circle">
-
-2
-
-</div>
-
-<p>
-
-Verification
-
-</p>
-
-</div>
-
-<div class="line"></div>
-
-<div class="step">
-
-<div class="circle">
-
-3
-
-</div>
-
-<p>
-
-Submit
-
-</p>
-
-</div>
-
-</section>
-
-<!-- STATUS -->
-
-<section class="statusCard" id="statusCard">
-
-<div class="statusIcon">
-
-🔒
-
-</div>
-
-<h3>
-
-Payment Pending
-
-</h3>
-
-<p>
-
-Complete your payment to unlock the form.
-
-</p>
-
-</section>
-
-<!-- FEATURES -->
-
-<section class="featureGrid">
-
-<div class="feature">
-
-⚡
-
-<p>
-
-Fast Service
-
-</p>
-
-</div>
-
-<div class="feature">
-
-🛡️
-
-<p>
-
-Secure Payment
-
-</p>
-
-</div>
-
-<div class="feature">
-
-💳
-
-<p>
-
-Razorpay
-
-</p>
-
-</div>
-
-<div class="feature">
-
-✅
-
-<p>
-
-Verified
-
-</p>
-
-</div>
-
-</section>
-
-<!-- FORM -->
-
-<section class="formCard">
-
-<h2>
-
-Submit Details
-
-</h2>
-
-<form id="workForm">
-
-<div class="inputBox">
-
-<label>
-
-JPW ID
-
-</label>
-
-<input
-type="number"
-id="jpwid"
-placeholder="Enter JPW ID"
-disabled>
-
-</div>
-
-<div class="inputBox">
-
-<label>
-
-Password
-
-</label>
-
-<input
-type="password"
-id="password"
-placeholder="Enter Password"
-disabled>
-
-</div>
-
-<div class="inputBox">
-
-<label>
-
-Payment ID
-
-</label>
-
-<input
-type="text"
-id="paymentid"
-placeholder="Auto Generated"
-readonly>
-
-</div>
-
-<button
-type="button"
-id="submitBtn"
-disabled>
-
-📤 Submit On WhatsApp
-
-</button>
-
-</form>
-
-</section>
-
-<!-- INFO -->
-
-<section class="infoCard">
-
-<div class="infoRow">
-
-<span>
-
-Amount
-
-</span>
-
-<b>
-
-₹15
-
-</b>
-
-</div>
-
-<div class="infoRow">
-
-<span>
-
-Payment Gateway
-
-</span>
-
-<b>
-
-Razorpay
-
-</b>
-
-</div>
-
-<div class="infoRow">
-
-<span>
-
-Verification
-
-</span>
-
-<b>
-
-Automatic
-
-</b>
-
-</div>
-
-<div class="infoRow">
-
-<span>
-
-Status
-
-</span>
-
-<b id="paymentStatus">
-
-Pending
-
-</b>
-
-</div>
-
-</section>
-
-  <a
-href="https://wa.me/919236414171"
-target="_blank"
-class="supportBtn">
-
-💬 WhatsApp Support
-
-</a>
-
-<footer>
-
-<h2>
-
-AINEX SERVICES
-
-</h2>
-
-<p>
-
-Professional Digital Service Provider
-
-</p>
-
-<p>
-
-© 2026 All Rights Reserved
-
-</p>
-
-</footer>
-
-</div>
-
-<script>
-
-window.RAZORPAY_KEY="rzp_live_TDV22u0kDyxYgq";
-
-</script>
-
-<script src="script.js"></script>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+
+    <div class="container">
+
+        <!-- TOP BAR -->
+        <div class="topBar">
+            <div class="marquee">
+                <span>
+                    🔥 Welcome To JPW REACHED SERVICES BOT • Complete ₹20 Payment • Payment Verification • Secure Service • Trusted Platform • Fast Delivery • Razorpay Secure Payment • JPW Reach •
+                </span>
+            </div>
+        </div>
+
+        <!-- HEADER -->
+        <header>
+            <div class="brand">
+                <div class="logo">
+                    🏢
+                </div>
+                <div>
+                    <h1>JPW REACHED SERVICES BOT</h1>
+                    <p>Jio Partner Work</p>
+                </div>
+            </div>
+            <div class="liveStatus">
+                <span></span>
+                Secure
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="heroCard">
+                <div class="rocket">
+                    🚀
+                </div>
+                <h2>
+                    Building ID Reach
+                </h2>
+                <p>
+                    Professional Digital Service
+                </p>
+                <div class="price">
+                    ₹20
+                    <span>
+                        Per Work Order
+                    </span>
+                </div>
+                <button id="payBtn">
+                    💳 Pay ₹20 Securely
+                </button>
+                <div class="paymentType">
+                    UPI • Cards • Wallet • NetBanking
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP -->
+        <section class="steps">
+            <div class="step active">
+                <div class="circle">
+                    1
+                </div>
+                <p>
+                    Payment
+                </p>
+            </div>
+            <div class="line"></div>
+            <div class="step">
+                <div class="circle">
+                    2
+                </div>
+                <p>
+                    Verification
+                </p>
+            </div>
+            <div class="line"></div>
+            <div class="step">
+                <div class="circle">
+                    3
+                </div>
+                <p>
+                    Submit
+                </p>
+            </div>
+        </section>
+
+        <!-- STATUS -->
+        <section class="statusCard" id="statusCard">
+            <div class="statusIcon">
+                🔒
+            </div>
+            <h3>
+                Payment Pending
+            </h3>
+            <p>
+                Complete your payment to unlock the form.
+            </p>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="featureGrid">
+            <div class="feature">
+                ⚡
+                <p>
+                    Fast Service
+                </p>
+            </div>
+            <div class="feature">
+                🛡️
+                <p>
+                    Secure Payment
+                </p>
+            </div>
+            <div class="feature">
+                💳
+                <p>
+                    Razorpay
+                </p>
+            </div>
+            <div class="feature">
+                ✅
+                <p>
+                    Verified
+                </p>
+            </div>
+        </section>
+
+        <!-- FORM -->
+        <section class="formCard">
+            <h2>
+                Submit Details
+            </h2>
+            <form id="workForm">
+                <div class="inputBox">
+                    <label>
+                        JPW ID
+                    </label>
+                    <input type="number" id="jpwid" placeholder="Enter JPW ID" disabled>
+                </div>
+
+                <div class="inputBox">
+                    <label>
+                        Password
+                    </label>
+                    <input type="password" id="password" placeholder="Enter Password" disabled>
+                </div>
+
+                <div class="inputBox">
+                    <label>
+                        Payment ID
+                    </label>
+                    <input type="text" id="paymentid" placeholder="Auto Generated" readonly>
+                </div>
+
+                <button type="button" id="submitBtn" disabled>
+                    📤 Submit On WhatsApp
+                </button>
+            </form>
+        </section>
+
+        <!-- INFO -->
+        <section class="infoCard">
+            <div class="infoRow">
+                <span>
+                    Amount
+                </span>
+                <b>
+                    ₹20
+                </b>
+            </div>
+            <div class="infoRow">
+                <span>
+                    Payment Gateway
+                </span>
+                <b>
+                    Razorpay
+                </b>
+            </div>
+            <div class="infoRow">
+                <span>
+                    Verification
+                </span>
+                <b>
+                    Automatic
+                </b>
+            </div>
+            <div class="infoRow">
+                <span>
+                    Status
+                </span>
+                <b id="paymentStatus">
+                    Pending
+                </b>
+            </div>
+        </section>
+
+        <a href="https://wa.me/918167443801" target="_blank" class="supportBtn">
+            💬 WhatsApp Support
+        </a>
+
+        <footer>
+            <h2>
+                JPW REACHED SERVICES BOT
+            </h2>
+            <p>
+                Professional Digital Service Provider
+            </p>
+            <p>
+                © 2026 All Rights Reserved
+            </p>
+        </footer>
+
+    </div>
+
+    <script>
+        window.RAZORPAY_KEY = "rzp_live_TDV22u0kDyxYgq";
+    </script>
+    <script src="script.js"></script>
 
 </body>
 
