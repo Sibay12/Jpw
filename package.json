@@ -1,0 +1,17 @@
+{
+  "name": "ainex-jpw-pro",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo Build Complete",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "razorpay": "^2.9.4"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
