@@ -19,12 +19,12 @@ export default async function handler(req, res) {
     const { amount } = req.body || {};
 
     const order = await razorpay.orders.create({
-      amount: amount || 1500,
+      amount: amount || 2000, // Default ₹20 (in paise)
       currency: "INR",
       receipt: `JPW_${Date.now()}`,
       notes: {
         service: "JPW Reach",
-        company: "AINEX SERVICES"
+        company: "JPW REACHED SERVICES BOT"
       }
     });
 
